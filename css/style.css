@@ -64,9 +64,6 @@ nav .logo h4 {
 }
 
 .icon-search {
-  cursor: pointer;
-  color: white;
-  font-size: 20px;
   display: none !important;
 }
 
@@ -78,6 +75,9 @@ nav .logo h4 {
   }
 
   .icon-search {
+    cursor: pointer;
+    color: white;
+    font-size: 20px;
     display: block !important;
   }
 
