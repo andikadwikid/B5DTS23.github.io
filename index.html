@@ -5,7 +5,14 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700&family=Lexend:wght@300;400;500;600&display=swap"
+      rel="stylesheet"
+    />
     <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="css/body-style.css" />
     <script
       src="https://kit.fontawesome.com/eb02a8b0ea.js"
       crossorigin="anonymous"
@@ -30,7 +37,426 @@
         <i class="fa-solid fa-bars menu-bar"></i>
       </nav>
     </header>
+    <main>
+      <section class="movies">
+        <!-- filter bar -->
+        <div class="filter-bar">
+          <div class="filter-dropdowns">
+            <select name="genre" class="genre">
+              <option value="all genres">All genres</option>
+              <option value="action">Action</option>
+              <option value="adventure">Adventure</option>
+              <option value="animal">Animal</option>
+              <option value="animation">Animation</option>
+              <option value="biography">Biography</option>
+            </select>
 
+            <select name="year" class="year">
+              <option value="all years">All the years</option>
+              <option value="2022">2022</option>
+              <option value="2020-2021">2020-2021</option>
+              <option value="2010-2019">2010-2019</option>
+              <option value="2000-2009">2000-2009</option>
+              <option value="1980-1999">1980-1999</option>
+            </select>
+          </div>
+
+          <div class="filter-radios">
+            <input type="radio" name="grade" id="featured" checked />
+            <label for="featured">Featured</label>
+
+            <input type="radio" name="grade" id="popular" />
+            <label for="popular">Popular</label>
+
+            <input type="radio" name="grade" id="newest" />
+            <label for="newest">Newest</label>
+
+            <div class="checked-radio-bg"></div>
+          </div>
+        </div>
+
+        <!-- movie grid -->
+
+        <div class="movies-grid">
+          <div class="movie-card">
+            <div class="card-head">
+              <img
+                src="https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcQ2IBsC-V_4yWbxP6E-mZnylYRTYq2G1lp8_s2XMzHPxkWqmKHp"
+                alt=""
+                class="card-img"
+              />
+
+              <div class="card-overlay">
+                <div class="bookmark">
+                  <ion-icon name="bookmark-outline"></ion-icon>
+                </div>
+
+                <div class="rating">
+                  <ion-icon name="star-outline"></ion-icon>
+                  <span>6.4</span>
+                </div>
+
+                <div class="play">
+                  <ion-icon name="play-circle-outline"></ion-icon>
+                </div>
+              </div>
+            </div>
+
+            <div class="card-body">
+              <h3 class="card-title">Red Notice</h3>
+
+              <div class="card-info">
+                <span class="genre">Action/Comedy</span>
+                <span class="year">2021</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="movie-card">
+            <div class="card-head">
+              <img
+                src="https://www.sonypictures.com.sg/sites/singapore/files/2022-03/spider_man_homecoming_rating.jpg"
+                alt=""
+                class="card-img"
+              />
+
+              <div class="card-overlay">
+                <div class="bookmark">
+                  <ion-icon name="bookmark-outline"></ion-icon>
+                </div>
+
+                <div class="rating">
+                  <ion-icon name="star-outline"></ion-icon>
+                  <span>7.4</span>
+                </div>
+
+                <div class="play">
+                  <ion-icon name="play-circle-outline"></ion-icon>
+                </div>
+              </div>
+            </div>
+
+            <div class="card-body">
+              <h3 class="card-title">Spider-Man: Homecoming</h3>
+
+              <div class="card-info">
+                <span class="genre">Action/Adventure</span>
+                <span class="year">2017</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="movie-card">
+            <div class="card-head">
+              <img
+                src="https://cdn.cgv.id/uploads/movie/compressed/21022000.jpg"
+                alt=""
+                class="card-img"
+              />
+
+              <div class="card-overlay">
+                <div class="bookmark">
+                  <ion-icon name="bookmark-outline"></ion-icon>
+                </div>
+
+                <div class="rating">
+                  <ion-icon name="star-outline"></ion-icon>
+                  <span>N/A</span>
+                </div>
+
+                <div class="play">
+                  <ion-icon name="play-circle-outline"></ion-icon>
+                </div>
+              </div>
+            </div>
+
+            <div class="card-body">
+              <h3 class="card-title">The Matrix Resurrections</h3>
+
+              <div class="card-info">
+                <span class="genre">Sci-fi/Action</span>
+                <span class="year">2021</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="movie-card">
+            <div class="card-head">
+              <img
+                src="https://cdn.marvel.com/content/1x/eternals_lob_crd_06.jpg"
+                alt=""
+                class="card-img"
+              />
+
+              <div class="card-overlay">
+                <div class="bookmark">
+                  <ion-icon name="bookmark-outline"></ion-icon>
+                </div>
+
+                <div class="rating">
+                  <ion-icon name="star-outline"></ion-icon>
+                  <span>6.8</span>
+                </div>
+
+                <div class="play">
+                  <ion-icon name="play-circle-outline"></ion-icon>
+                </div>
+              </div>
+            </div>
+
+            <div class="card-body">
+              <h3 class="card-title">Eternals</h3>
+
+              <div class="card-info">
+                <span class="genre">Adventure/Action</span>
+                <span class="year">2021</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="movie-card">
+            <div class="card-head">
+              <img
+                src="https://www.dolby.com/siteassets/xf-site/content-detail-pages/dune_in_dolby_poster.jpg"
+                alt=""
+                class="card-img"
+              />
+
+              <div class="card-overlay">
+                <div class="bookmark">
+                  <ion-icon name="bookmark-outline"></ion-icon>
+                </div>
+
+                <div class="rating">
+                  <ion-icon name="star-outline"></ion-icon>
+                  <span>8.2</span>
+                </div>
+
+                <div class="play">
+                  <ion-icon name="play-circle-outline"></ion-icon>
+                </div>
+              </div>
+            </div>
+
+            <div class="card-body">
+              <h3 class="card-title">Dune</h3>
+
+              <div class="card-info">
+                <span class="genre">Sci-fi/Adventure</span>
+                <span class="year">2021</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="movie-card">
+            <div class="card-head">
+              <img
+                src="https://upload.wikimedia.org/wikipedia/id/a/ae/1917_film_poster.jpg"
+                alt=""
+                class="card-img"
+              />
+
+              <div class="card-overlay">
+                <div class="bookmark">
+                  <ion-icon name="bookmark-outline"></ion-icon>
+                </div>
+
+                <div class="rating">
+                  <ion-icon name="star-outline"></ion-icon>
+                  <span>8.3</span>
+                </div>
+
+                <div class="play">
+                  <ion-icon name="play-circle-outline"></ion-icon>
+                </div>
+              </div>
+            </div>
+
+            <div class="card-body">
+              <h3 class="card-title">1917</h3>
+
+              <div class="card-info">
+                <span class="genre">War/Drama</span>
+                <span class="year">2019</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="movie-card">
+            <div class="card-head">
+              <img
+                src="https://lumiere-a.akamaihd.net/v1/images/shang-chi-poster_660fcb9f.jpeg"
+                alt=""
+                class="card-img"
+              />
+
+              <div class="card-overlay">
+                <div class="bookmark">
+                  <ion-icon name="bookmark-outline"></ion-icon>
+                </div>
+
+                <div class="rating">
+                  <ion-icon name="star-outline"></ion-icon>
+                  <span>7.6</span>
+                </div>
+
+                <div class="play">
+                  <ion-icon name="play-circle-outline"></ion-icon>
+                </div>
+              </div>
+            </div>
+
+            <div class="card-body">
+              <h3 class="card-title">
+                Shang-Chi and The Legend of The Ten Rings
+              </h3>
+
+              <div class="card-info">
+                <span class="genre">Action/Fantasy</span>
+                <span class="year">2021</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="movie-card">
+            <div class="card-head">
+              <img
+                src="https://m.media-amazon.com/images/M/MV5BYmI3MmMzMGMtNzc4Ni00YWQ4LWFkMDYtNjVlOWU3ZGZiNjY1XkEyXkFqcGdeQXVyNDQ2MTMzODA@._V1_.jpg"
+                alt=""
+                class="card-img"
+              />
+
+              <div class="card-overlay">
+                <div class="bookmark">
+                  <ion-icon name="bookmark-outline"></ion-icon>
+                </div>
+
+                <div class="rating">
+                  <ion-icon name="star-outline"></ion-icon>
+                  <span>8.0</span>
+                </div>
+
+                <div class="play">
+                  <ion-icon name="play-circle-outline"></ion-icon>
+                </div>
+              </div>
+            </div>
+
+            <div class="card-body">
+              <h3 class="card-title">Casino Royale</h3>
+
+              <div class="card-info">
+                <span class="genre">Action/Adventure</span>
+                <span class="year">2006</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="movie-card">
+            <div class="card-head">
+              <img
+                src="https://resizing.flixster.com/WAHXGKleT3QvhqHUlFGIRgcQAjU=/206x305/v2/https://flxt.tmsimg.com/assets/p173378_p_v8_au.jpg"
+                alt=""
+                class="card-img"
+              />
+
+              <div class="card-overlay">
+                <div class="bookmark">
+                  <ion-icon name="bookmark-outline"></ion-icon>
+                </div>
+
+                <div class="rating">
+                  <ion-icon name="star-outline"></ion-icon>
+                  <span>9.0</span>
+                </div>
+
+                <div class="play">
+                  <ion-icon name="play-circle-outline"></ion-icon>
+                </div>
+              </div>
+            </div>
+
+            <div class="card-body">
+              <h3 class="card-title">The Dark Knight</h3>
+
+              <div class="card-info">
+                <span class="genre">Action/Adventure</span>
+                <span class="year">2008</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="movie-card">
+            <div class="card-head">
+              <img
+                src="https://upload.wikimedia.org/wikipedia/id/0/0c/Black_Panther_film_poster.jpg"
+                alt=""
+                class="card-img"
+              />
+
+              <div class="card-overlay">
+                <div class="bookmark">
+                  <ion-icon name="bookmark-outline"></ion-icon>
+                </div>
+
+                <div class="rating">
+                  <ion-icon name="star-outline"></ion-icon>
+                  <span>7.3</span>
+                </div>
+
+                <div class="play">
+                  <ion-icon name="play-circle-outline"></ion-icon>
+                </div>
+              </div>
+            </div>
+
+            <div class="card-body">
+              <h3 class="card-title">Black Panther</h3>
+
+              <div class="card-info">
+                <span class="genre">Action/Adventure</span>
+                <span class="year">2018</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <div class="form-container">
+        <section class="form-wrapper">
+          <h2 class="subtitle">Ready to Explore More?</h2>
+          <form class="form">
+            <div class="form-section">
+              <label for="#username">Username</label>
+              <input type="text" id="username" placeholder="John_Doe" />
+            </div>
+            <div class="form-section">
+              <label for="#email">Email</label>
+              <input id="email" type="email" placeholder="johndoe@gmail.com" />
+            </div>
+            <div class="form-section">
+              <label for="#password">Password</label>
+              <input id="password" type="password" placeholder="*****" />
+            </div>
+            <div class="form-section">
+              <label for="#password">Confirm Password</label>
+              <input id="password" type="password" placeholder="*****" />
+            </div>
+            <div class="button">
+              <button type="submit">Sign Up</button>
+            </div>
+          </form>
+        </section>
+      </div>
+    </main>
     <script src="js/script.js"></script>
+    <script
+      type="module"
+      src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"
+    ></script>
+    <script
+      nomodule
+      src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"
+    ></script>
   </body>
 </html>
