@@ -18,6 +18,20 @@ nav {
   background: #0f0f0f;
 }
 
+nav .logo {
+  display: flex;
+}
+
+nav .logo ul li {
+  margin-top: 17px;
+}
+
+nav form input {
+  background-color: #fff;
+  border-radius: 5px;
+  padding: 0.7em 0.5em;
+}
+
 nav .logo h4 {
   font-size: 40px;
   cursor: pointer;
@@ -45,6 +59,14 @@ nav .logo h4 {
 .menu-bar {
   cursor: pointer;
   color: white;
+  font-size: 20px;
+  display: none !important;
+}
+
+.icon-search {
+  cursor: pointer;
+  color: white;
+  font-size: 20px;
   display: none !important;
 }
 
@@ -53,6 +75,14 @@ nav .logo h4 {
     display: block !important;
     cursor: pointer;
     color: #fff;
+  }
+
+  .icon-search {
+    display: block !important;
+  }
+
+  nav form input {
+    display: none !important;
   }
 
   .menu {
