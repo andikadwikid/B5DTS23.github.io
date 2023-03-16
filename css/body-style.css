@@ -28,8 +28,8 @@ img {
 #toTop {
   display: none;
   position: fixed;
-  bottom: 50px;
-  right: 50px;
+  bottom: 30px;
+  right: 10px;
   z-index: 99;
   font-size: 18px;
   border: none;
