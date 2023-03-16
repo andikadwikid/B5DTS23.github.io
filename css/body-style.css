@@ -25,6 +25,22 @@ img {
   pointer-events: none;
 }
 
+#toTop {
+  display: none;
+  position: fixed;
+  bottom: 50px;
+  right: 50px;
+  z-index: 99;
+  font-size: 18px;
+  border: none;
+  outline: none;
+  background-color: #f00;
+  color: white;
+  cursor: pointer;
+  padding: 15px;
+  border-radius: 50%;
+}
+
 /**
    * remove form default
    */
@@ -304,7 +320,7 @@ input ~ .checked-radio-bg {
      */
 
   .movies {
-    margin-top: 120px;
+    /* margin-top: 120px; */
   }
 
   /**

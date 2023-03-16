@@ -11,9 +11,10 @@
       href="https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700&family=Lexend:wght@300;400;500;600&display=swap"
       rel="stylesheet"
     />
-    <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="css/navbar-style.css" />
+    <link rel="stylesheet" href="css/main-style.css" />
     <link rel="stylesheet" href="css/body-style.css" />
-    <link rel="stylesheet" href="css/form.css" />
+    <link rel="stylesheet" href="css/form-style.css" />
     <script
       src="https://kit.fontawesome.com/eb02a8b0ea.js"
       crossorigin="anonymous"
@@ -31,9 +32,9 @@
         <div class="logo">
           <h4>Logo</h4>
           <ul class="menu">
-            <li><a href="#">Home</a></li>
-            <li><a href="#">About</a></li>
-            <li><a href="#">Contact</a></li>
+            <li><a href="#">Movie</a></li>
+            <li><a href="#">TV Series</a></li>
+            <li><a href="#">Genre</a></li>
           </ul>
         </div>
         <form>
@@ -41,8 +42,31 @@
         </form>
         <i class="fa-solid fa-magnifying-glass icon-search"></i>
       </nav>
+      <section class="container">
+        <div class="slide-wrapper">
+          <div class="slide heading">
+            <h1>
+              Find your favorite movies. <br />
+              All in one place.
+            </h1>
+          </div>
+          <div class="slide">
+            <img src="img/3.jpeg" alt="" />
+            <p>Taxi Driver</p>
+          </div>
+          <div class="slide">
+            <img src="img/2.jpg" alt="" />
+            <p>All Quiet on The Western Front</p>
+          </div>
+          <div class="slide">
+            <img src="img/4.jpg" alt="" />
+            <p>Spy X Family</p>
+          </div>
+        </div>
+      </section>
     </header>
     <main>
+      <button onclick="topFunction()" id="toTop" title="Go to top">Top</button>
       <section class="movies">
         <!-- filter bar -->
         <div class="filter-bar">
